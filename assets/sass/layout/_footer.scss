@@ -1,0 +1,19 @@
+.footer {
+    background-color: $color-grey-dark-2;
+    color: $color-white;
+    padding: 3rem 0;
+
+    &__social-buttons {
+        margin-bottom: 1rem;
+    }
+
+    &__social-link {
+        &:link,
+        &:visited {
+            font-size: 3rem;
+            color: $color-white;
+            margin: 0 0.5rem;
+        }
+        
+    }
+}

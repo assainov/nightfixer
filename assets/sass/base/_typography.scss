@@ -1,0 +1,68 @@
+body {
+    font-family: $font-primary;
+    font-size: $default-font;
+    font-weight: $fw-regular;
+    line-height: 1.7;
+    color: $color-grey-dark-1;
+    text-align: center;
+}
+
+.heading-primary {
+    color: $color-white;
+
+    &--main {
+        text-transform: uppercase;
+        font-size: 5rem;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        @include respond(phone) {
+            font-size: 3.5rem;
+            white-space: inherit;
+            line-height: 1;
+        }
+    }
+
+    &--sub {
+        font-weight: $fw-light;
+        letter-spacing: 0;
+        display: block;
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    
+}
+
+.heading-secondary {
+    color: $color-grey-dark-1;
+    font-size: 3.2rem;
+    font-weight: $fw-bold;
+}
+
+.heading-description {
+    max-width: 70%;
+    margin: 0 auto;
+    @include respond(phone) {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
+
+.paragraph {
+    line-height: 2.2;
+
+    &--italic {
+        font-style: italic;
+    }
+}
+
+.heading-line {
+    display: block;
+    border: none;
+    border-top: 2px solid $color-primary;
+    width: 15%;
+    margin: 4rem auto 6rem auto;
+
+}

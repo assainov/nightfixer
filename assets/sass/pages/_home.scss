@@ -1,0 +1,29 @@
+section {
+    padding: 6rem 0;
+}
+
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include respond(phone) {
+        justify-content: center;
+        align-content: space-around;
+    }
+}
+
+.section-subscribe {
+    background-color: $color-grey-light;
+}
+
+.section-testimonials {
+    padding: 6rem 30rem;
+
+
+    @include respond(tab-port) {
+        padding: 6rem 5rem;
+    }
+    @include respond(phone) {
+        padding: 6rem 0;
+    }
+}

@@ -1,0 +1,36 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+
+
+
+    @include respond (tab-port) {
+        min-height: none;
+    }
+
+    &__image {
+        height: 35rem;
+        background-position: center center;
+        background-size: cover;
+
+        // Make space between images
+        padding: 2rem;
+        background-clip: content-box;
+
+        &--short {
+            flex-basis: 30%;
+            @include respond (tab-port) {
+                flex-basis: 100%;
+            }
+        }
+
+        &--long {
+            flex-basis: 70%;
+            @include respond (tab-port) {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.5rem 4rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        opacity: 1;
+
+    }
+
+    &--primary {
+        &,
+        &:link,
+        &:visited {
+            background-color: $color-primary;
+            color: $color-white;
+            font-weight: $fw-medium;
+        }
+        &:hover,
+        &:focus {
+            background-color: lighten($color-primary, 3);
+        }
+    }
+
+}
