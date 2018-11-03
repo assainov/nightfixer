@@ -258,6 +258,9 @@ body {
   transform: scale(1.5); }
   #mc-embedded-subscribe-form.validate {
     background-color: #f7f7f7; }
+  @media (max-width: 37.5em) {
+    #mc-embedded-subscribe-form {
+      transform: scale(0.8); } }
 
 #mc_embed_signup {
   background-color: #f7f7f7; }

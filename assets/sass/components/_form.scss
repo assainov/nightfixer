@@ -88,6 +88,9 @@
     }
     background-color: $color-grey-light;
     transform: scale(1.5);
+    @include respond(phone) {
+        transform: scale(0.8);
+    }
 }
 
 #mc_embed_signup {
