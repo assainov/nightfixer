@@ -275,7 +275,7 @@ input.button {
 
 .header {
   height: 100vh;
-  background: url("../img/hero.jpg"), rgba(125, 95, 255, 0.5);
+  background: url("../img/hero-min.jpg"), rgba(125, 95, 255, 0.5);
   background-blend-mode: multiply;
   background-position: center center;
   background-size: cover; }
